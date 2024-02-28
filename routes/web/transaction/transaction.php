@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\transaction\TransactionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group([
+    'prefix'     => 'transaction',
+    'as'         => 'transaction.'
+], function () {
+    Route::get('/', [TransactionController::class, 'index'])->name('index');
 });
