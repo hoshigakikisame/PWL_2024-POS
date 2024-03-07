@@ -28,7 +28,7 @@
 <body class="antialiased m-0 p-0">
     @yield('content')
 
-    <div class="row">
+    {{-- <div class="row">
         <div class="col-md-12">
             <h2>Link List</h2>
             <ul>
@@ -43,7 +43,7 @@
                 <li><a href="{{ route('transaction.index') }}">Transaction</a></li>
             </ul>
         </div>
-    </div>
+    </div> --}}
 
     @stack('modals')
 

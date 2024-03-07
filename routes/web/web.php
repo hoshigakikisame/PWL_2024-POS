@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LevelController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,10 +15,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 // require other route files
-require __DIR__ . '/product/product.php';
-require __DIR__ . '/user/user.php';
-require __DIR__ . '/transaction/transaction.php';
+// require __DIR__ . '/product/product.php';
+// require __DIR__ . '/user/user.php';
+// require __DIR__ . '/transaction/transaction.php';
 
-Route::get('/', function () {
-    return view('home');
+Route::get('/', function() {
+    return view('welcome');
 });
+
+Route::get('/level', [LevelController::class, 'index']);
+
+// Route::get('/', function () {
+//     return view('home');
+// });
