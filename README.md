@@ -4,5 +4,5 @@ This project meant to fulfill college assignment for PWL 2024 (Pemrograman Web L
 
 ## Deliverables
 1. [x] Minggu 3 : [2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu3_Tugas](https://github.com/hoshigakikisame/PWL_2024.POS/blob/main/resources/documents/2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu3_Tugas.pdf)
-2. [x] Minggu 4 : [2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu4_Praktikum](https://github.com/hoshigakikisame/PWL_2024.POS/blob/main/resources/documents/2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu4_Praktikum.pdf)
-3. [x] Minggu 5 : [2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu5_Praktikum](https://github.com/hoshigakikisame/PWL_2024.POS/blob/main/resources/documents/2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu5_Praktikum.pdf)
+2. [x] Minggu 4 : [2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu4_Praktikum](https://github.com/hoshigakikisame/PWL_2024.POS/blob/Minggu-4/resources/documents/2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu4_Praktikum.pdf)
+3. [x] Minggu 5 : [2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu5_Praktikum](https://github.com/hoshigakikisame/PWL_2024.POS/blob/Minggu-5/resources/documents/2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu5_Praktikum.pdf)
