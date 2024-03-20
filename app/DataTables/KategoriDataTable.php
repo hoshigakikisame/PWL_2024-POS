@@ -8,8 +8,6 @@ use Yajra\DataTables\EloquentDataTable;
 use Yajra\DataTables\Html\Builder as HtmlBuilder;
 use Yajra\DataTables\Html\Button;
 use Yajra\DataTables\Html\Column;
-use Yajra\DataTables\Html\Editor\Editor;
-use Yajra\DataTables\Html\Editor\Fields;
 use Yajra\DataTables\Services\DataTable;
 
 class KategoriDataTable extends DataTable
@@ -22,8 +20,12 @@ class KategoriDataTable extends DataTable
     public function dataTable(QueryBuilder $query): EloquentDataTable
     {
         return (new EloquentDataTable($query))
-/*             ->addColumn('action', 'kategori.action') */
-            ->setRowId('id');
+            ->setRowId('id')
+            ->addColumn('action', function($row) {
+                $btn = '<a href="kategori/edit/'.$row->kategori_id.'" class="edit btn btn-primary btn-sm">Edit</a>';
+                $btn = $btn.' <a href="kategori/delete/'.$row->kategori_id.'" class="delete btn btn-danger btn-sm">Delete</a>';
+                return $btn;
+            });
     }
 
     /**
@@ -72,6 +74,7 @@ class KategoriDataTable extends DataTable
             Column::make('kategori_nama'),
             Column::make('created_at'),
             Column::make('updated_at'),
+            Column::make('action')
         ];
     }
 

@@ -26,6 +26,7 @@
     @endif
 @stop
 
+
 {{-- Rename section content to content_body --}}
 
 @section('content')
