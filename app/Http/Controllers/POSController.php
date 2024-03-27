@@ -1,6 +1,8 @@
 <?php
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\user\LevelController;
+use App\Models\LevelModel;
 use App\Models\m_user;
 use Illuminate\Http\Request;
 
@@ -20,7 +22,8 @@ class POSController extends Controller
      */
     public function create()
     {
-        return view('m_user.create');
+        $level = LevelModel::all(); //mendapatkan data dari tabel level
+        return view('m_user.create', compact('level'));
     }
     /**
      * Store a newly created resource in storage.

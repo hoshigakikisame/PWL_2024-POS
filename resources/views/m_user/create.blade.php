@@ -24,6 +24,17 @@
         @csrf
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
+                <strong>Level:</strong>
+                {{-- multichoice --}}
+                <select name="level_id" class="form-control">
+                    @foreach ($level as $lvl)
+                        <option value="{{ $lvl->level_id }}">{{ $lvl->level_nama }}</option>
+                    @endforeach
+                </select>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
                 <strong>Username:</strong>
                 <input type="text" name="username" class="form-control" placeholder="Masukkan username"></input>
             </div>
