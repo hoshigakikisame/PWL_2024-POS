@@ -21,12 +21,13 @@ use App\Http\Controllers\user\UserController;
 // require __DIR__ . '/user/user.php';
 // require __DIR__ . '/transaction/transaction.php';
 require __DIR__ . '/forms/forms.php';
+require __DIR__ . '/user/level.php';
 
 Route::get('/', function() {
     return view('welcome');
 });
 
-Route::get('/level', [LevelController::class, 'index']);
+// Route::get('/level', [LevelController::class, 'index']);
 Route::get('/kategori/create', [KategoriController::class, 'create'])->name('kategori.create');
 Route::get('/kategori', [KategoriController::class, 'index'])->name('kategori.index');
 Route::post('/kategori/store', [KategoriController::class, 'store'])->name('kategori.store');

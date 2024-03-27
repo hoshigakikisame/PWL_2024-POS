@@ -120,11 +120,20 @@ class UserController extends Controller
 
     public function tambah()
     {
-        return view('user_tambah');
+        // return view('user_tambah');
+        return view('forms/m_user/tambah');
     }
 
     public function tambah_simpan()
     {
+
+        request()->validate([
+            'username' => 'required',
+            'nama' => 'required',
+            'password' => 'required',
+            'level_id' => 'required',
+        ]);
+
         $data = [
             'username' => request()->username,
             'nama' => request()->nama,
