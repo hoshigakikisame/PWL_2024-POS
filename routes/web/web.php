@@ -20,6 +20,7 @@ use App\Http\Controllers\user\UserController;
 // require __DIR__ . '/product/product.php';
 // require __DIR__ . '/user/user.php';
 // require __DIR__ . '/transaction/transaction.php';
+require __DIR__ . '/forms/forms.php';
 
 Route::get('/', function() {
     return view('welcome');
