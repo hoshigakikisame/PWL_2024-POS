@@ -17,6 +17,8 @@ use App\Http\Controllers\user\UserController;
 |
 */
 
+use App\Http\Controllers\WelcomeController;
+
 // require other route files
 // require __DIR__ . '/product/product.php';
 // require __DIR__ . '/user/user.php';
@@ -24,9 +26,7 @@ use App\Http\Controllers\user\UserController;
 require __DIR__ . '/forms/forms.php';
 require __DIR__ . '/user/level.php';
 
-Route::get('/', function() {
-    return view('welcome');
-});
+Route::get('/', [WelcomeController::class, 'index']);
 
 // Route::get('/level', [LevelController::class, 'index']);
 Route::get('/kategori/create', [KategoriController::class, 'create'])->name('kategori.create');

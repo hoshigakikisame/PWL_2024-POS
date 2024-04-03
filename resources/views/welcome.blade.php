@@ -1,22 +1,14 @@
-@extends('adminlte::page')
-@section('title', 'Dashboard')
-@section('content_header')
-    <h1>Dashboard</h1>
-@stop
+@extends('layouts.template')
+
 @section('content')
-    <ul>
-        <li><a href="{{ url('/forms/general') }}">General Elements</a></li>
-        <li><a href="{{ url('/forms/advanced') }}">Advanced Elements</a></li>
-        <li><a href="{{ url('/forms/editors') }}">Editors</a></li>
-        <li><a href="{{ url('/forms/validation') }}">Validation</a></li>
-    </ul>
-@stop
-@section('css')
-    {{-- Add here extra stylesheets --}}
-    {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}}
-@stop
-@section('js')
-    <script>
-        console.log("Hi, I'm using the Laravel-AdminLTE package!");
-    </script>
-@stop
+    
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Halo, apakabar!!!</h3>
+        <div class="card-tools"></div>
+    </div>
+    <div class="card-body">
+        Selamat datang semua, ini adalah halaman utama dari aplikasi ini
+    </div>
+</div>
+@endsection
