@@ -89,11 +89,12 @@
                                             <td class="text-center">{{ $dt->kategori->kategori_nama }}</td>
                                             <td class="text-center">{{ $dt->barang_kode }}</td>
                                             <td class="text-center">{{ $dt->barang_nama }}</td>
-                                            <td class="text-center">{{ $dt->stok->stok_jumlah }}</td>
+                                            {{-- <td class="text-center">{{ $dt->stok->stok_jumlah }}</td> --}}
+                                            <td class="text-center"><input type="number" id="qty{{$idx}}" class="form-control" name="qty" value="1" min="1" max="{{ $dt->stok->stok_jumlah }}" required></td>
                                             <td class="text-center">{{ $dt->harga_jual }}</td>
                                             <td class="text-center">
                                                 <!-- <button type="button" data-toggle="modal" data-target="#stokModal{{$dt->barang_id}}" class="btn btn-primary">Pilih</button> -->
-                                                <div class="btn btn-primary" onclick="tambahKeranjang({{ $dt->barang_id }}, '{{ $dt->barang_nama }}', {{ $dt->harga_jual }}, 1, {{ $dt->stok->stok_jumlah }})">Pilih</div>
+                                                <div class="btn btn-primary" onclick="tambahKeranjang({{ $dt->barang_id }}, '{{ $dt->barang_nama }}', {{ $dt->harga_jual }}, document.querySelector('#qty{{$idx}}').value, {{ $dt->stok->stok_jumlah }})">Pilih</div>
                                             </td>
                                         </tr>
                                         @endforeach
