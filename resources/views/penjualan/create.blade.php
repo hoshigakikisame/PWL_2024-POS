@@ -76,6 +76,7 @@
                                             <th class="text-center">Kategori</th>
                                             <th class="text-center">Kode Barang</th>
                                             <th class="text-center">Nama Barang</th>
+                                            <th class="text-center">Image</th>
                                             <th class="text-center">Stok</th>
                                             <th class="text-center">Harga</th>
                                             <th class="text-center">Aksi</th>
@@ -89,6 +90,9 @@
                                             <td class="text-center">{{ $dt->kategori->kategori_nama }}</td>
                                             <td class="text-center">{{ $dt->barang_kode }}</td>
                                             <td class="text-center">{{ $dt->barang_nama }}</td>
+                                            <td class="text-center">
+                                                <img src="{{ asset($dt->image) }}" alt="{{ $dt->barang_nama }}" class="img-thumbnail" width="100">
+                                            </td>
                                             {{-- <td class="text-center">{{ $dt->stok->stok_jumlah }}</td> --}}
                                             <td class="text-center"><input type="number" id="qty{{$idx}}" class="form-control" name="qty" value="1" min="1" max="{{ $dt->stok->stok_jumlah }}" required></td>
                                             <td class="text-center">{{ $dt->harga_jual }}</td>

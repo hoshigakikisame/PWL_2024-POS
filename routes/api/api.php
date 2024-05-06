@@ -61,3 +61,5 @@ Route::group(
         Route::delete('/{kategori}', [App\Http\Controllers\Api\Kategori\KategoriController::class, 'destroy']);
     }
 );
+
+Route::post('/register1', App\Http\Controllers\Api\Auth\RegisterController::class)->name('register1');

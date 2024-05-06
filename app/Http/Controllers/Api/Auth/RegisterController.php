@@ -9,34 +9,44 @@ use App\Models\UserModel;
 
 class RegisterController extends Controller
 {
-    public function __invoke(Request $request) {
+    public function __invoke(Request $request)
+    {
+        //set validation
         $validator = Validator::make($request->all(), [
             'username' => 'required',
             'nama' => 'required',
             'password' => 'required|min:5|confirmed',
-            'level_id' => 'required'
+            'level_id' => 'required',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
-
+        //if validations fails
         if ($validator->fails()) {
             return response()->json($validator->errors(), 422);
         }
 
+        // upload image if exist
+        if ($request->hasFile('image')) {
+            $request->file('image')->storeAs('posts', $request->image->hashName());
+        }
+
+        //create user
         $user = UserModel::create([
             'username' => $request->username,
             'nama' => $request->nama,
             'password' => bcrypt($request->password),
-            'level_id' => $request->level_id
+            'level_id' => $request->level_id,
+            'image' => $request->image->hashName()
         ]);
-
+        //return response JSON user is created
         if ($user) {
             return response()->json([
                 'success' => true,
-                'user' => $user
+                'user' => $user,
             ], 201);
         }
-
+        //return JSON process insert failed
         return response()->json([
             'success' => false,
         ], 409);
-    } 
+    }
 }

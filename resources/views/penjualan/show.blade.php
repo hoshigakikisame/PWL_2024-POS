@@ -54,6 +54,7 @@
             <tr>
                 <th>No</th>
                 <th>Barang</th>
+                <th>Image</th>
                 <th>Jumlah</th>
                 <th>Harga</th>
             </tr>
@@ -62,6 +63,9 @@
             <tr>
                 <td>{{ $idx++ }}</td>
                 <td>{{ $dt->barang->barang_nama }}</td>
+                <td>
+                    <img src="{{ asset($dt->barang->image) }}" alt="{{ $dt->barang->barang_nama }}" class="img-thumbnail" width="100">
+                </td>
                 <td>{{ $dt->jumlah }}</td>
                 <td>{{ $dt->harga }}</td>
             </tr>
