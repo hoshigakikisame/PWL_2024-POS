@@ -12,3 +12,4 @@ This project meant to fulfill college assignment for PWL 2024 (Pemrograman Web L
 6. [x] Minggu 11 : [2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu11_Jobsheet9](https://github.com/hoshigakikisame/PWL_2024.POS/blob/main/resources/documents/2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu11_Jobsheet9.pdf)
 6. [x] Minggu 12 : [2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu12_Jobsheet10](https://github.com/hoshigakikisame/PWL_2024.POS/blob/main/resources/documents/2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu12_Jobsheet10.pdf)
 6. [x] Minggu 13 : [2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu13_Jobsheet11](https://github.com/hoshigakikisame/PWL_2024.POS/blob/main/resources/documents/2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu13_Jobsheet11.pdf)
+6. [x] Minggu 13 : [2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu14_Jobsheet12](https://github.com/hoshigakikisame/PWL_2024.POS/blob/main/resources/documents/2241720264_FerdiRiansyahRK_TI-2H_PWL_Minggu14_Jobsheet12.pdf)
